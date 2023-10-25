@@ -14,7 +14,7 @@ data = [
     "7 minggu 1 hari 5 jam 33 menit"
 ]
 
-OutputData = []
+output = []
 
 for item in data:
     parts = item.split()
@@ -24,12 +24,12 @@ for item in data:
     menit = int(parts[6])
 
     konvert = konversi_minggu(minggu)(hari)(jam)(menit)
-    OutputData.append(konvert)
+    output.append(konvert)
 
-print("OutputData =", OutputData)
+print("OutputData =", output)
 
 integer_values = []
-for item in OutputData:
+for item in output:
     item_values = list(filter(str.isdigit, str(item)))
     integer_values.append(item_values)
 
