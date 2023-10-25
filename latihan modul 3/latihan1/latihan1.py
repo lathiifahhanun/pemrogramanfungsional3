@@ -14,7 +14,7 @@ data = [
     "7 minggu 1 hari 5 jam 33 menit"
 ]
 
-OutputData = []
+output = []
 
 for item in data:
     parts = item.split()
@@ -26,4 +26,4 @@ for item in data:
     konvert = konversi_minggu(minggu)(hari)(jam)(menit)
     OutputData.append(konvert)
 
-print("OutputData =", OutputData)
+print("OutputData =", output)
